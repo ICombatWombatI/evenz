@@ -1,0 +1,376 @@
+.flex-warper-element {
+    margin: auto;
+}
+
+body {
+    width: 100%;
+    position: relative;
+    max-height: 100%;
+}
+
+main {
+    height: calc(100vh);
+    min-height: 500px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 200;
+    justify-content: center;
+ }
+
+ .accordion-style {
+    position:relation!important; 
+    top:20px;
+    right:20px;
+    width:100%;
+}
+
+.manu-links {
+    height: 70px; 
+    font-size:20px;
+}
+
+.manu-content {
+    display: flex; 
+    flex-direction: column;  
+    justify-content: space-between;  
+    align-items: center;
+    margin:35px; 
+    height: 380px;
+}
+
+.footer-bottom-liks {
+    display: flex; 
+    align-self: center;
+    justify-content: space-between;
+    align-items: center; 
+    margin: auto;
+    height: 70px; 
+    width: 45%;
+}
+
+.bottom-liks {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    height: 70px; 
+    width:70%;
+}
+
+.warper {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.google {
+    background-image: url("/assets/google-play-badge.png");
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin: 0;
+}
+
+
+.apple {
+    background-image: url("/assets/Download_on_the_App_Store_Badg.jpg");
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin: 0;
+}
+
+.warper-buttons {
+    margin: auto;
+    height: 100%;
+    width:340px!important;  
+    justify-content: space-between!important;  
+}
+
+.desc-element {
+    display: flex;
+    flex-wrap: nowrap;
+    height: 125px;
+    width: 70%;
+    max-width: 1000px;
+}
+
+.last {
+    height: 16%!important;
+}
+
+.flex-warper-element:first-child {
+    justify-content: flex-start;
+    margin-bottom: auto;
+}
+
+.button-style  {
+    padding: 0;
+    margin: 0;
+    width:160px;
+    border-radius:5px;
+    height:45px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.find-best {
+    color: #FFFFFF;	
+    font-family: "Roboto";	
+    font-size: 32px;	
+    line-height: 44px;	
+    text-align: center;
+    z-index: 50!important;
+
+}
+
+.find-best-download {
+    height: 2.44%;	
+    width: 100%;	
+    opacity: 0.5;	
+    color: #FFFFFF;	
+    font-family: Roboto;	
+    font-size: 19px;	
+    line-height: 25px;	
+    text-align: center;
+}
+
+.evenz {
+    width: 100%;
+    color: #fff;
+    font-family: Courgette;
+    font-size: 115px;
+    text-align: center;
+}
+
+.text-element {
+    color: #FFFFFF;	
+    font-family: "Roboto";	
+    font-size: 38px;
+    line-height: 44px;	
+    text-align: center;
+}
+
+.evenz-home {
+    text-decoration: none!important;
+    color: white!important;
+    font-size: 30px!important;
+    line-height: 37px!important;
+    font-family: "Courgette";
+
+}
+
+.button-insest{
+    margin-top:22px;
+    margin:auto;
+    font-size: 14px;
+    line-height: 19px;
+    z-index: 0.5;
+    color: #FFFFFF;
+}
+
+.button-insest:nth-child(2){
+    position: absolute;
+    top:26px;
+    width: 270px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.button-insest:last-child{
+    margin: 0;
+    right: 35px;
+    top: 14px;
+    position: relative;
+}
+
+h3 {
+    color: #fafafa;
+    margin-bottom: 5px;
+}
+
+.devise-icon {
+    color: #ffffff;
+}
+
+a {
+    font-family: "roboto";
+    text-decoration: none;
+    color: #ffffff;
+}
+
+ .flex-container{
+    position: absolute;
+    background-color: none;
+    bottom: auto;
+    z-index: 210;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.bottom {
+    bottom: 22px!important;
+}
+
+.evenz-home {
+    text-decoration: none!important;
+    color: white!important;
+    font-size: 30px!important;
+    line-height: 37px!important;
+    font-family: "Courgette";
+}
+
+.element {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+h3 {
+    color: #fafafa;
+    margin-bottom: 5px;
+}
+
+.devise-icon {
+    color: #ffffff;
+}
+a {
+    font-family: "roboto";
+    text-decoration: none;
+    color: #ffffff;
+}
+.mobile-on {
+    display: none!important;
+}
+
+.flex-footer-element:last-child {
+    margin-left: auto;
+    margin-right: 35px;
+ }
+ 
+ .flex-footer-element:first-child{
+     margin-right: auto;
+     margin-left: 35px;
+ }
+
+ .stacked-group-element-left {
+    text-decoration: none;
+    font-family: "Roboto";	
+    font-size: 13px;	
+    line-height: 15px;
+    color:  #FFFFFF;
+}
+
+.stacked-group-element {
+    text-decoration: none;
+    margin-left: 20px;
+    font-family: "Roboto";	
+    font-size: 13px;	
+    line-height: 15px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+ .button-conteiner {
+    margin-top:51px; 
+    flex-wrap: nowrap;
+}
+
+@media only screen and (max-width: 496px) {
+
+    .mobile-off  {
+        display: none!important;
+    }
+
+    .mobile-on {
+        display: flex!important;
+    }
+
+    .mobile-bottom {
+        width: 100%!important;
+        text-align: center!important;
+        font-size: 13px!important;
+    }
+
+    main {
+        height: 800px!important;
+    }
+
+    .bottom {
+        bottom: 2px!important;
+    }
+
+    .evenz {
+        font-size: 62.4px!important;
+        height: 70px!important;
+    }
+
+    .find-best-download {
+        width: 50%!important;
+        margin: auto!important;
+    }
+
+    .warper-buttons {
+        justify-content: center!important;  
+        flex-wrap: wrap!important;  
+    }
+  
+   
+    .desc-element:last-child {
+        justify-content: flex-end;
+    }
+
+    .find-best {
+        line-height: 32px!important;	
+        font-size: 24px!important;	
+        width: 100%!important;
+    }
+
+    .desc-element:first-child {
+        height: 10%;
+      }
+
+    .desc-element {
+        height: 27%;
+    }
+
+    .button-conteiner {
+        margin-top:51px; 
+        flex-wrap: wrap;
+    }
+    .evenz {
+        font-size: 75px;
+    }
+
+    .find-best {
+        font-size: 25px!important;
+        width: 240px!important;
+    }
+  
+    .flex-footer-element:first-child {
+     margin-right:0;
+     margin-left:0;
+    }
+
+    .flex-footer-element:last-child {
+        display: none;
+    }
+
+    .flex-element:last-child {
+        flex-direction: column;
+    }
+}

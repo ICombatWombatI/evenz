@@ -1,0 +1,281 @@
+body {
+    width: 100%;
+    overflow: unset;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 200;
+    background-color: #fff;
+    align-items: center;
+    height: 100vh;
+    min-height: 600px;
+}
+
+.send-button-conteiner {
+    height: 90px;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center;
+}
+
+header {
+    height: 250px;
+    width: 100%;
+    position: relative;
+    z-index: 200;
+}
+ 
+.flex-contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    height: 100%;
+}
+
+.contact-element {
+    color: white;
+    font-weight: 10;
+    align-self: center;
+    font-size: 45px;
+}
+
+.desc-element {
+    display: flex;
+    flex-wrap: nowrap;
+    max-width: 1000px;
+    margin: 1.5%;
+    width: 600px;
+}
+
+.desc-element:last-child {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    flex-wrap: nowrap;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    margin: 0;
+    max-width: none;
+    height: 70px;
+}
+
+.warper {
+    width:100%;  
+    display: flex; 
+    flex-direction: column;
+    flex-wrap: nowrap;     
+}
+
+.send-button {
+    color:white;	
+    height: 42px;	
+    width: 104px;	
+    border-radius: 3px;	
+    background-color: #FF0545;
+}
+
+ a {
+    color: #FF0545;	
+    font-family: "Roboto";	
+    font-size: 14px;	
+    line-height: 22px
+ }
+ 
+ .text-desc-element {
+     display: flex;
+     flex-direction: column;
+ }
+
+ .Np {
+    color: rgba(0, 0, 0,0.6); 
+    font-family: Roboto; 
+    font-size: 14px; 
+    line-height: 22px;
+    align-self: center;
+}
+
+ .send-input-conteiner {
+    height: 58px;
+ }
+
+ .text-input-field {
+    height: 28px;	
+    width: 340px;	
+    border: 1px solid rgba(0, 0, 0,0.2);
+    border-radius: 3px;
+    font-family: "Roboto";	
+    font-size: 14px;	
+    line-height: 22px;
+    color:rgba(0, 0, 0,0.8)
+ }
+
+ .text-field {
+    height: 164px;	
+    width: 90%; 
+    border: 1px solid rgba(0, 0, 0,0.2); 	
+    border-radius: 3px;
+    font-family: "Roboto";	
+    font-size: 14px;	
+    line-height: 22px;
+    color:rgba(0, 0, 0, 0.8)
+ }
+
+ .top-text {
+    color: #FF0545;	
+    font-family: "Roboto";	
+    font-size: 22px;	
+    line-height: 30px;
+ }
+
+ .bace-desc-text {
+     width: 420px;
+     opacity: 0.6;	
+     color: #000000;
+     font-family: "Roboto";
+     font-size: 14px;	
+     line-height: 35px;
+ }
+
+.flex-container {
+    background-color: none;
+    bottom: auto;
+    margin: auto;
+    left: 0; 
+    right: 0;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.stacked-group-element-left {
+    text-decoration: none;
+    font-family: "Roboto";	
+    font-size: 13px;	
+    line-height: 15px;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.stacked-group-element {
+    text-decoration: none;
+    margin-left: 20px;
+    font-family: "Roboto";	
+    font-size: 13px;	
+    line-height: 15px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.flex-footer-element:last-child {
+    margin-left: auto;
+    margin-right: 40px;
+ }
+ 
+ .flex-footer-element:first-child{
+     margin-right: auto;
+     margin-left: 40px;
+ }
+
+ @media only screen and (max-width: 620px) {
+
+    header {
+        height:140px;
+    }
+
+    .flex-contact {
+        display: flex;
+        position: absolute;
+        flex-direction: column;
+        justify-content: flex-end;
+        bottom: 35px;
+        left: 30px;
+    }
+    
+    .contact-element {
+        color: white;
+        font-weight: 10;
+        align-self: flex-start;
+        font-size: 36px;
+    }
+
+    body {
+        height: 100%;
+    }
+
+    .around {
+        flex-direction: column-reverse!important;
+    }
+
+    .warper {
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        width: 100%!important;
+    }
+
+    .desc-element {
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        width: 95%!important;
+    }
+
+    .Np {
+       width: 100%!important;
+    }
+
+    .desc-element:last-child {
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        width: 100%!important;
+        height: 60px;
+    }
+
+    .bace-desc-text {
+        width: 90%!important;
+    }
+
+    .text-desc-element {
+        width: 90%!important;
+    }
+  
+    .flex-footer-element:first-child {
+     margin-right:0;
+     margin-left:0;
+    }
+
+    .flex-footer-element:last-child {
+        display: none;
+    }
+
+    .text-field {
+        width: 90%!important;
+        margin: auto!important;
+    }
+
+    .send-input-conteiner {
+        width: 100%!important;
+        margin: auto!important;
+     }
+
+    .text-input-field {
+        width: 90%!important;
+        margin: auto!important;
+    }
+    
+    .send-button-conteiner {
+        width: 100%!important;
+    }
+
+    .send-button {
+        width: 90%!important;
+        margin: auto!important;
+    }
+}

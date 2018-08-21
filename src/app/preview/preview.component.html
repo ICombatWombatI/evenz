@@ -1,0 +1,154 @@
+<body>
+  <!-- BG -->
+  <img class="BG" src="../assets/E_tablet.png">
+
+  <!-- header -->
+  <div class="flex-container">
+
+    <div class="element">
+      <a href="" routerLink="/preview" class="evenz-home button-insest"></a>
+
+      <div class="button-insest">
+        <a routerLink="/about" class="mobile-off ">About</a>
+
+        <a routerLink="/partners" class="mobile-off ">Partners</a>
+
+        <a routerLink="/contact" class="mobile-off ">Contact Us</a>
+        
+      </div>
+      <mat-accordion class="mobile-on accordion-style">
+        <mat-expansion-panel [ngStyle]="{'background': open ? '#ff0545' : 'none'}" style=" box-shadow:none;  width: 100%;" hideToggle>
+          <mat-expansion-panel-header (click)="mobileon()">
+
+            <a mat-icon-button style="margin-left:auto;" *ngIf="!open">
+              <mat-icon style="font-size:42px; color: #FFFFFF; position:relative;top:6px">menu</mat-icon>
+            </a>
+
+            <a mat-icon-button style="margin-left:auto" hideToggle *ngIf="open">
+              <mat-icon hideToggle style="font-size:42px; color: #FFFFFF; position:relative;top:6px">close</mat-icon>
+            </a>
+
+          </mat-expansion-panel-header>
+
+          <div class="manu-content">
+
+            <a class="manu-links" routerLink="/about">About</a>
+
+            <a class="manu-links" routerLink="/partners">Partners</a>
+
+            <a class="manu-links" routerLink="/contact">Contact Us</a>
+
+            <a class="manu-links" routerLink="/Privacy"> Privacy </a>
+
+            <a  class="manu-links" routerLink="/TermsOfUse"> Terms of Use </a>
+
+            <a  class="manu-links" routerLink="/FAQs"> FAQs </a>
+
+            <div class="bottom-liks">
+              <a mat-icon-button>
+                <div class="fab fa-instagram " style="font-size:20px"></div>
+              </a>
+              <a mat-icon-button routerLink="/partners">
+                <div class="fab fa-facebook-square " style="font-size:20px"></div>
+              </a>
+              <a mat-icon-button routerLink="/contact">
+                <div class="fab fa-twitter " style="font-size:20px"></div>
+              </a>
+            </div>
+          </div>
+        </mat-expansion-panel>
+      </mat-accordion>
+
+      <div class="mobile-off button-insest" routerLink="/partners">
+        <a mat-icon-button>
+          <div class="fab fa-instagram" style="font-size:22px"></div>
+        </a>
+        <a mat-icon-button routerLink="/partners">
+          <div class="fab fa-facebook-square" style="font-size:22px"></div>
+        </a>
+
+        <a mat-icon-button routerLink="/contact">
+          <div class="fab fa-twitter" style="font-size:22px"></div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- main -->
+  <main>
+
+    <!-- main title -->
+    <div class="desc-element">
+      <div class="warper">
+        <div class="evenz">
+          Evenz
+        </div>
+      </div>
+    </div>
+   <!--- white space-->
+   <div style="height: 20px;"></div>
+    <!-- Some words -->
+    <div class="desc-element">
+      <div class="warper">
+        <div class="find-best" style="width: 75%;">
+
+          <div > Find the best events around you or create them!</div>
+
+          <!--- white space-->
+          <div style="height: 20px;"></div>
+
+          <div class="find-best-download"> Download our app now </div>
+            
+        </div>
+      </div>
+    </div>
+    
+    <!-- buttons -->
+    <div class="desc-element last">
+      <div class="warper warper-buttons">
+
+        <a href='https://itunes.apple.com/us/app/find-the-best-events-around-yo/id1079422918?ls=1&mt=8%20https://play.google.com/store/apps/details'>
+          <img alt='Get it on Google Play' class="button-style" src='assets/apple.jpg' />
+        </a>
+
+        <a href='https://play.google.com/store/apps/details?id=com.evenzgroup.evenz&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'>
+          <img alt='Get it on Google Play' class="button-style" src='assets/google.png' />
+        </a>
+
+      </div>
+    </div>
+    <div  class="mobile-on" style="height: 150px;"></div>
+    <!--- white space-->
+    <div style="height: 50px;"></div>
+
+    <!-- footer -->
+    <div class="flex-container bottom">
+      <div class="flex-footer-element mobile-bottom stacked-group-element-left">
+        &#169; 2018 Evenz Group, inc.
+
+        <div class="footer-bottom-liks mobile-on">
+          <a mat-icon-button>
+            <div class="fab fa-instagram " style="font-size:29px"></div>
+          </a>
+          <a mat-icon-button routerLink="/partners">
+            <div class="fab fa-facebook-square " style="font-size:29px"></div>
+          </a>
+          <a mat-icon-button routerLink="/contact">
+            <div class="fab fa-twitter " style="font-size:29px"></div>
+          </a>
+        </div>
+      </div>
+
+      <div class="flex-footer-element">
+          <a href="#/Privacy" routerlink="/privacy" class="stacked-group-element"> Privacy </a>
+
+          <a href="#/TermsOfUse" routerlink="/TermsOfUse" class="stacked-group-element"> Terms of Use </a>
+
+          <a href="#/Copyright" routerlink="/Copyright" class="stacked-group-element"> Copyright </a>
+
+          <a href="#/FAQs" routerlink="/FAQs" class="stacked-group-element"> FAQs </a>
+      </div>
+    </div>
+  </main>
+
+</body>

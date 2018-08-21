@@ -1,0 +1,72 @@
+<div class="flex-container">
+
+    <div class="element">
+        <a href="" routerLink="/preview" class="evenz-home button-insest">Evenz</a>
+        <div class="button-insest">
+            <a routerLink="/about" class="mobile-off">About</a>
+
+            <a routerLink="/partners" class="mobile-off">Partners</a>
+
+            <a routerLink="/contact" class="mobile-off">Contact Us</a>
+
+        </div>
+        <mat-accordion class="mobile-on accordion-style">
+            <mat-expansion-panel [ngStyle]="{'background': open ? '#ff0545' : 'none'}" style=" box-shadow:none; width: 100%;" hideToggle>
+                <mat-expansion-panel-header (click)="mobileon()">
+
+                    <a mat-icon-button style="margin-left:auto;" *ngIf="!open">
+                        <mat-icon style="font-size:42px; color: #FFFFFF; position:relative;top:6px">menu</mat-icon>
+                    </a>
+
+                    <a mat-icon-button style="margin-left:auto" *ngIf="open">
+                        <mat-icon style="font-size:42px; color: #FFFFFF; position:relative;top:6px">close</mat-icon>
+                    </a>
+
+                </mat-expansion-panel-header>
+
+                <div class="manu-content">
+
+                    <a class="manu-links" routerLink="/about">About</a>
+
+                    <a class="manu-links" routerLink="/partners">Partners</a>
+
+                    <a class="manu-links" routerLink="/contact">Contact Us</a>
+
+                    <a class="manu-links" routerLink="/Privacy"> Privacy </a>
+
+                    <a class="manu-links" routerLink="/TermsOfUse"> Terms of Use </a>
+
+                    <a class="manu-links" routerLink="/Copyright"> Copyright </a>
+
+                    <a class="manu-links" routerLink="/FAQs"> FAQs </a>
+
+                    <div class="bottom-liks">
+                        <a mat-icon-button>
+                            <div class="fab fa-instagram " style="font-size:29px"></div>
+                        </a>
+                        <a mat-icon-button routerLink="/partners">
+                            <div class="fab fa-facebook-square " style="font-size:29px"></div>
+                        </a>
+                        <a mat-icon-button routerLink="/contact">
+                            <div class="fab fa-twitter " style="font-size:29px"></div>
+                        </a>
+                    </div>
+                </div>
+            </mat-expansion-panel>
+        </mat-accordion>
+
+
+        <div class="mobile-off button-insest" routerLink="/partners">
+            <a mat-icon-button>
+                <div class="fab fa-instagram" style="font-size:22px"></div>
+            </a>
+            <a mat-icon-button routerLink="/partners">
+                <div class="fab fa-facebook-square" style="font-size:22px"></div>
+            </a>
+
+            <a mat-icon-button routerLink="/contact">
+                <div class="fab fa-twitter" style="font-size:22px"></div>
+            </a>
+        </div>
+    </div>
+</div>

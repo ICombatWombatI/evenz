@@ -1,0 +1,127 @@
+.flex-container{
+    background-color: none;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 210;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+
+.evenz-home {
+    position: absolute;
+    margin: 0;
+    top:20px;
+    left:20px;
+
+    text-decoration: none!important;
+    color: white!important;
+    font-size: 30px!important;
+    line-height: 37px!important;
+    font-family: "Courgette";
+}
+
+.element {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-insest{
+    margin-top:22px;
+    margin:auto;
+    font-size: 14px;
+    line-height: 19px;
+    z-index: 0.5;
+    color: #FFFFFF;
+}
+.button-insest:nth-child(2){
+    position: absolute;
+    top:26px;
+    width: 270px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+ 
+}
+.button-insest:last-child{
+    margin: 0;
+    right:35px;
+    top:14px;
+    position: absolute;
+}
+
+
+.button-insest:first-child{
+    width: 150px;
+    margin: 0;
+    top:14px;
+    left: 25px;
+    margin-right: auto;
+} 
+
+.accordion-style {
+    position:relation!important; 
+    top:20px;
+    right:20px;
+    width:100%;
+}
+
+.manu-links {
+    height: 70px; 
+    font-size:20px
+}
+
+.manu-content {
+    display: flex; 
+    flex-direction: column;  
+    justify-content: space-between;  
+    align-items: center;
+    margin:35px; 
+    height: 380px;
+}
+
+.bottom-liks {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    height: 70px; 
+    width:70%;
+}
+
+h3 {
+    color: #fafafa;
+    margin-bottom: 5px;
+}
+
+button {
+    color: white;
+}
+.devise-icon {
+    color: #ffffff;
+}
+a {
+    font-family: "roboto";
+    text-decoration: none;
+    color: #ffffff;
+}
+.mobile-on {
+    display: none!important;
+}
+
+@media only screen and (max-width: 620px) {
+    .mobile-off  {
+        display: none!important;
+    }
+    .mobile-on {
+        display: flex!important;
+    }
+}
+.example-spacer {
+    flex: 1 1 auto;
+  }
+  

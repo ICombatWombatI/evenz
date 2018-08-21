@@ -1,0 +1,88 @@
+
+<body>
+    <!---BG -->
+    <img class="BGSlid" src="../assets/E_tablet.png">
+
+    <!---toolbar -->
+    <app-toolbar style=" width: 100%;"> </app-toolbar>
+
+    <!---header -->
+    <header>
+        <div class="flex-contact">
+            <div class="contact-element">
+                Contact Us
+            </div>
+        </div>
+    </header>
+
+    <!---main -->
+    <main>
+        
+        <!--- desc-element 1 -->
+        <div class="desc-element">
+            <div class="warper">
+                <div class="text-desc-element">
+                    <div style="height: 122px; display: flex; flex-direction: column-reverse;">
+                        <div class="top-text">
+                            Have something on your mind?
+                            <br> What about a great idea? Confusion?
+                        </div>
+                    </div>
+
+                    <div class="Np">
+                        No problem, we`re here for that! Email us and we promise to get back to you as soon as we can.
+                        <!-- Any support related questions/comments/feedback please email-->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--- white space-->
+        <div style="height: 50px;"></div>
+
+        <!--- desc-element 2 -->
+        <div class="desc-element">
+            <div class="warper">
+
+                <textarea class="text-field" placeholder="Your message" id="message" name="message" [(ngModel)]="message"></textarea>
+                <br>
+
+                <input class="text-input-field" placeholder="Your name" id="name" name="name" maxlength="20" [(ngModel)]="name">
+                <br>
+                
+                <input class="text-input-field" placeholder="Your Email" id="email" name="email" maxlength="40" [(ngModel)]="email" required>
+                <br>
+
+                <div class="send-button-conteiner" (click)="sendMessage()">
+                    <button mat-button class="send-button">
+                        Send
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!--- white space-->
+        <div style="height:150px"></div>
+    
+        <!--- Footer + desc-element 3 -->
+        <div class="desc-element">
+            
+            <div style="width: 100%; position: relative; background-color: #E1E6EF;   height: 1px; bottom:0"></div>
+
+            <div class="flex-container">
+                <div class="flex-footer-element stacked-group-element-left">
+                    &#169; 2018 Evenz Group, inc.
+                </div>
+                <div class="flex-footer-element">
+                        <a href="#/Privacy" routerlink="/Privacy" class="stacked-group-element"> Privacy </a>
+
+                        <a href="#/TermsOfUse" routerlink="/TermsOfUse" class="stacked-group-element"> Terms of Use </a>
+              
+                        <a href="#/Copyright" routerlink="/Copyright" class="stacked-group-element"> Copyright </a>
+              
+                        <a href="#/FAQs" routerlink="/FAQs" class="stacked-group-element"> FAQs </a>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
